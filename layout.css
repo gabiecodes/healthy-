@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: linear-gradient(90deg, #07c972, #359d9e);
+  height: 8vh;
+}
+:root {
+  --cor-fundo: (90deg, #07c972, #359d9e);
+  --cor-hover: rgb(40, 122, 74);
+  --cor-primaria: rgb(231, 241, 236);
+}
+
+.dp-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dp-menu ul {
+  background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.dp-menu ul li a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+  background-color: var(--cor-hover);
+}
+
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+}
+
+.dp-menu ul ul {
+  width: 150px
+}
+
+.dp-menu ul ul li a {
+  display: block;
+
+}
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: white;
+}
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/balanca-imc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-clip: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #07c972, #359d9e);
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(214, 221, 217);
+    color: aliceblue;
+  }
+  
+  .title{
+    display: flex;
+    color: rgb(244, 248, 243);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2.5rem serif;
+    border-bottom: solid 5px rgb(255, 255, 255);
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    display: contents;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .input input {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    outline: 0;
+    font: bold 1.5rem serif;
+    text-align: center;
+    margin: 12px;
+  }
+  
+  .input label {
+    font: bold 1.5rem serif;
+  }
+  
+  button{
+    width: 100px;
+    height: 40px;
+    font: bold 1.2rem serif;
+    background: rgb(245, 248, 246);
+    color: rgb(7, 32, 2);
+    outline: none;
+    border-radius: 5px;
+    border-color: rgb(7,32,2);
+    cursor: pointer;
+  }
+  
+  .result{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    width: 300px;
+    height: 1400px;
+    border-radius: 4px;
+    font: 400;
+    box-shadow: 0px 0px 10 cornflowerblue;
+    background: rgb(255, 255, 255);
+    color: rgb(5, 55, 9);
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+    font-weight: 700;
+  }
+
+  .footer{
+    background: linear-gradient(90deg, #07c972, #359d9e);
+    color: #fff;
+  }

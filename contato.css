@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: linear-gradient(90deg, #07c972, #359d9e);
+  height: 8vh;
+}
+
+:root {
+  --cor-fundo: (90deg, #07c972, #359d9e);
+  --cor-hover: rgb(40, 122, 74);
+  --cor-primaria: rgb(231, 241, 236);
+}
+
+.dp-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dp-menu ul {
+  background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.dp-menu ul li a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+  background-color: var(--cor-hover);
+}
+
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+}
+
+.dp-menu ul ul {
+  width: 150px
+}
+
+.dp-menu ul ul li a {
+  display: block;
+
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: white;
+}
+
+main {
+  padding: 100px;
+}
+
+.image {
+
+  background-position: center;
+  text-align: center;
+}
+
+body {
+  color: white;
+  background-color: #07c972;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header img {
+  margin-top: 80px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #082501;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  color: #082501;
+}
+
+.container {
+  padding: 0px 50px;
+}
+
+
+.contact-form input {
+  width: 100%;
+  padding: 8px 0;
+  margin: 8px 0;
+}
+
+.contact-form input[type=text] {
+  height: 100px;
+}
+
+button {
+  color: rgb(5, 49, 36);
+  background-color: white;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-color: rgb(5, 49, 36);
+}
+
+.footer {
+  background: linear-gradient(90deg, #07c972, #359d9e);
+  color: #fff;
+  margin-top: 80px;
+
+}
